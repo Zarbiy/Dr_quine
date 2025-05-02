@@ -13,7 +13,7 @@ OBJ         = Grace.o
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(LD) -o $(NAME) $(OBJ)
+	$(LD) -o $(NAME) $(OBJ) -nostartfiles
 
 $(OBJ): $(SRC)
 	$(NASM) $(NASM_FLAGS) $(SRC) -o $(OBJ)
