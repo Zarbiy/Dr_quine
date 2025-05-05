@@ -13,13 +13,13 @@ OBJ         = Grace.o
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(LD) -o $(NAME) $(OBJ) -nostartfiles
+	$(LD) -o $(NAME) $(OBJ) -nostartfiles -no-pie
 
 $(OBJ): $(SRC)
 	$(NASM) $(NASM_FLAGS) $(SRC) -o $(OBJ)
 
 clean:
-	@rm -f $(OBJ)
+	@rm -f $(OBJ) Grace_kid.s
 
 fclean: clean
 	@rm -f $(NAME)
