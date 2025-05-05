@@ -12,7 +12,7 @@ int main(){
     if (x <= 0)
         return 0;
     int current = x - 1;
-    char name_file[30];
+    char name_file[15];
     sprintf(name_file, "Sully_%d.c", current);
     int fd = open(name_file, O_WRONLY | O_CREAT | O_TRUNC, 0644);
     if (fd < 0)
