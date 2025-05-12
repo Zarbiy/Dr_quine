@@ -1,5 +1,6 @@
-TXT = "Bonjour"
-PRINT_MSG(name_file) = name_file.write(TXT) 
-FONC = def main(): file = open("Grace_kid.c", "w") PRINT_MSG(file) file.close()
+TXT = 'TXT = {!r}\nFONC = \'file = open("Grace_kid.py", "w")\\nfile.write(TXT.format(TXT))\\nfile.close()\'\nMAIN = exec\n# this is a comment\n\nMAIN(FONC)'
+FONC = 'file = open("Grace_kid.py", "w")\nfile.write(TXT.format(TXT))\nfile.close()'
+MAIN = exec
+# this is a comment
 
-FONC
+MAIN(FONC)
