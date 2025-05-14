@@ -6,7 +6,7 @@ SRC_COLLEEN = Colleen.py
 SRC_GRACE   = Grace.py
 SRC_SULLY   = Sully.py
 
-GENERATED_FILES = Sully_0.py Sully_1.py Sully_2.py Sully_3.py Sully_4.py
+GENERATED_FILES = Sully_*
 GENERATED_FILES_KID = Grace_kid.py
 
 all:

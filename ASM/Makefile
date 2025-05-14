@@ -14,7 +14,7 @@ NAME_COLLEEN = Colleen
 NAME_GRACE   = Grace
 NAME_SULLY   = Sully
 
-GENERATED_FILES = Sully_0.s Sully_1.s Sully_2.s Sully_3.s Sully_4.s
+GENERATED_FILES = Sully_*
 GENERATED_FILES_KID = Grace_kid.s
 
 all:
