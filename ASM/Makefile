@@ -30,7 +30,7 @@ $(NAME_COLLEEN): $(OBJ_COLLEEN)
 	$(LD) -o $@ $^
 
 $(NAME_GRACE): $(OBJ_GRACE)
-	$(LD) -o $@ $^ -nostartfiles -no-pie
+	$(LD) -o $@ $^
 
 $(NAME_SULLY): $(OBJ_SULLY)
 	$(LD) -o $@ $^ 
