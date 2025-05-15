@@ -33,7 +33,7 @@ $(NAME_GRACE): $(OBJ_GRACE)
 	$(LD) -o $@ $^ -nostartfiles -no-pie
 
 $(NAME_SULLY): $(OBJ_SULLY)
-	$(LD) -o $@ $^ -nostartfiles
+	$(LD) -o $@ $^ 
 
 %.o: %.s
 	$(NASM) $(NASM_FLAGS) $< -o $@
